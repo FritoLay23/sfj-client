@@ -1,10 +1,6 @@
-const Home = ({ Comp }) => {
-  return (
+import HomeC from "../../components/Home.c";
 
-      <main>
-        <>{Comp ? <Comp /> : <h1>Home</h1>}</>
-      </main>
-
-  );
+const Home = () => {
+  return <HomeC />;
 };
 export default Home;
