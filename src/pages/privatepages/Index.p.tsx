@@ -1,10 +1,10 @@
-const IndexP = ({ Comp }) => {
-    return (
-  
-        <main>
-          <>{Comp ? <Comp /> : <h1>IndexP</h1>}</>
-        </main>
-  
-    );
-  };
-  export default IndexP;
+import BranchListC from "../../components/BranchList.c";
+
+const IndexP = () => {
+  return (
+    <div className="container_index">
+      <BranchListC />
+    </div>
+  );
+};
+export default IndexP;
