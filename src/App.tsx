@@ -28,16 +28,18 @@ const App = () => {
         <Route path="/" element={<Public Comp={Home} />} />
         <Route path="/about" element={<Public Comp={About} />} />
         <Route path="/login" element={<Public Comp={Login} />} />
-        <Route path="/game" element={<Private Comp={GameP} />} />
         <Route path="*" element={<Public Comp={NoPageP} />} />
 
         {/* Private Pages */}
         <Route element={<RequireAuth isAllowed={isAuth} />}>
-          <Route path="/branch" element={<Private Comp={IndexP} />} />
           <Route path="/users" element={<Private Comp={UsersP} />} />
           <Route path="/questions" element={<Private Comp={QuestionsP} />} />
           <Route path="/games" element={<Private Comp={GamesP} />} />
           <Route path="/scores" element={<Private Comp={ScoresP} />} />
+          <Route path="/branch" element={<Private Comp={IndexP} />} />
+          <Route path="/branch/:branch" element={<Private Comp={GameP} />} />
+          {/* 
+          <Route path="/branch/:branch" element={<Private Comp={IndexP} />} /> */}
         </Route>
       </Routes>
     </Router>

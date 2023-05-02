@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link to="/any" className="link-nav">
+            <Link to="/branch" className="link-nav">
               Algo
             </Link>
           </li>

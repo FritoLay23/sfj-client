@@ -19,6 +19,8 @@ const Login = () => {
     const resProfile = await profileRequest();
     setProfile(resProfile.data.user);
 
+    console.log(resProfile.data);
+
     navigate("/auth");
   };
 
