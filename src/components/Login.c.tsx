@@ -13,7 +13,9 @@ const Login = () => {
     const user = (e.currentTarget.elements[0] as HTMLInputElement).value;
     const password = (e.currentTarget.elements[1] as HTMLInputElement).value;
 
-    const reslogin = await loginRequest(user, password);
+    const auth = { user, password };
+
+    const reslogin = await loginRequest(auth);
     setToken(reslogin.data.token);
 
     const resProfile = await profileRequest();
