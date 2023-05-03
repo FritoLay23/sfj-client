@@ -1,10 +1,6 @@
-const About = ({ Comp }) => {
-    return (
-  
-        <main>
-          <>{Comp ? <Comp /> : <h1>About</h1>}</>
-        </main>
-  
-    );
-  };
-  export default About;
+import Aboutc from "../../components/About.c";
+
+const Aboutp = () => {
+  return <Aboutc />;
+};
+export default Aboutp;

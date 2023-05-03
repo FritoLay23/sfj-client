@@ -1,11 +1,11 @@
-import { Navigate, Outlet } from "react-router-dom"
+import { Navigate, Outlet } from "react-router-dom";
 
 interface Props {
-    isAllowed: boolean;
-    children?: React.ReactNode;
-}   
+  isAllowed: boolean;
+  children?: React.ReactNode;
+}
 
-export const RequireAuth = ({ isAllowed, children}: Props ) => {
-    if (!isAllowed) return <Navigate to="/login" />
-    return children ? <>{children}</> : <Outlet />
-}  
+export const RequireAuth = ({ isAllowed, children }: Props) => {
+  if (!isAllowed) return <Navigate to="/login" />;
+  return children ? <>{children}</> : <Outlet />;
+};
