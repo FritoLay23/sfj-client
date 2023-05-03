@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Results from "./Results.c";
+import Timer from "./Time.c"
 
 const Question = ({
   filteredQuestion,
@@ -13,6 +14,7 @@ const Question = ({
   const [answered, setAnswered] = useState(false);
   const [answersRandom, setAnswersRandom] = useState([]);
   const [activeResults, setActiveResults] = useState(false);
+  const [reset, setReset] = useState(false);
 
   useEffect(() => {
     const answers = [...filteredQuestion.options, filteredQuestion.answer];
@@ -56,7 +58,7 @@ const Question = ({
               {indexQuestion + 1} / {questionsFiltered.length}
             </span>
             <div>
-              <span className="font-semibold">Dificultad: </span>
+              <span className="font-semibold">Dificultad: <Timer initialTime={10} rese={reset}  /></span>
               <span className="font-bold">
                 {/* La dificultad de la pregunta */}
                 {filteredQuestion.type}
@@ -102,6 +104,8 @@ const Question = ({
               onClick={() => {
                 setAnswered(false);
                 setActiveResults(true);
+                setReset(true);
+                
               }}
             >
               Finalizar
