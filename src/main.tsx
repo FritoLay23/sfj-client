@@ -9,7 +9,8 @@ import "./styles/Index.scss";
 import "./styles/Game.scss";
 import "./styles/About.scss";
 import "./styles/Slider.scss";
-import "./styles/Login.scss"
+import "./styles/Login.scss";
+import "./styles/Inicio.scss";
 //scss
 
 const Render = () => {

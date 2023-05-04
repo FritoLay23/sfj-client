@@ -12,12 +12,12 @@ const Navbar: React.FC = () => {
       <div className="container-navbar-all">
         <div>
           <Link to="/" className="link-nav">
-            <h3>SFJ</h3>
+            <h3>History 🌎</h3>
           </Link>
         </div>
         <ul className="list-navbar">
           <li>
-            <Link to="/game" className="link-nav">
+            <Link to="/Inicio" className="link-nav">
               Inicio
             </Link>
           </li>

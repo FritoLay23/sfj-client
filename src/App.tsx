@@ -17,6 +17,8 @@ import QuestionsP from "./pages/privatepages/Questions.p";
 import GamesP from "./pages/privatepages/Games.p";
 import ScoresP from "./pages/privatepages/Scores.p";
 import GameP from "./pages/publicpages/Game.p";
+import Inicio from "./components/Inicio.c";
+
 
 const App = () => {
   const isAuth = useAuthStore((state) => state.isAuth);
@@ -29,6 +31,7 @@ const App = () => {
         <Route path="/about" element={<Public Comp={About} />} />
         <Route path="/login" element={<Public Comp={Login} />} />
         <Route path="*" element={<Public Comp={NoPageP} />} />
+        <Route path="/Inicio" element={<Public Comp={Inicio} />} />
 
         {/* Private Pages */}
         <Route element={<RequireAuth isAllowed={isAuth} />}>
@@ -47,3 +50,4 @@ const App = () => {
 };
 
 export default App;
+ 
