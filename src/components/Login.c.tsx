@@ -28,9 +28,23 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="User" />
-      <input type="password" placeholder="Password" />
-      <button>Login</button>
+          <div className="login-div">
+      <div className="logo">
+        <img src="mapa.png" alt="" />
+      </div>
+      <div className="title">History🌍</div>
+
+      <div className="fields">
+        <div className="username">
+<i className="fa fa-user"></i>
+          <input type="username" className="user-input" placeholder="👤 username" /></div>
+        <div className="password"><i className="fa fa-lock"></i> <input type="password" className="pass-input" placeholder="🔑 password" /></div>
+      </div>
+      <button className="signin-button">Login</button>
+      <div className="link">
+        <a href="#">Forgot password?</a> or <a href="#">Sign up</a>
+      </div>
+    </div>
     </form>
   );
 };
