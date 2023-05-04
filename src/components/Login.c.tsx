@@ -32,7 +32,7 @@ const Login = () => {
       <div className="logo">
         <img src="mapa.png" alt="" />
       </div>
-      <div className="title">History🌍</div>
+      <div className="title">SFJ</div>
 
       <div className="fields">
         <div className="username">

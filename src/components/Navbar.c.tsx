@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       <div className="container-navbar-all">
         <div>
           <Link to="/" className="link-nav">
-            <h3>History 🌎</h3>
+            <h3>SFJ</h3>
           </Link>
         </div>
         <ul className="list-navbar">

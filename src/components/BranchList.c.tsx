@@ -13,6 +13,10 @@ const [
 
 const BranchList = () => {
   return (
+    <>
+    <div className="cont_cardTitle">
+      <h1>Selecciona tu categoria preferida</h1>
+    </div>
     <div className="cont_cardBranch">
       {/* branch Link Filosofia */}
       <BranchCardC
@@ -33,6 +37,7 @@ const BranchList = () => {
         alt={`branch ${branches.historia}`}
       />
     </div>
+    </>
   );
 };
 export default BranchList;

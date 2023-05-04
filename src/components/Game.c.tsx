@@ -49,12 +49,12 @@ const Game = (gameBranch: any) => {
         />
       ) : (
         <>
-          <div className="flex flex-col gap-5">
-            <h1 className="text-3xl text-teal-900 text-center font-bold">
+          <div className="gameDisa">
+            <h1 className="game_title">
               {gameBranch.gameBranch.title}
             </h1>
 
-            <div className="flex justify-center items-center">
+            <div className="game_img">
               <img
                 src={`/src/assets/${imgBranch[0]}.png`}
                 alt={branch}
@@ -65,7 +65,7 @@ const Game = (gameBranch: any) => {
           </div>
 
           <button
-            className="text-white bg-gray-900 py-2 rounded-lg font-bold px-5 transition-all hover:bg-yellow-500 hover:text-gray-900"
+            className="btn_gameOut"
             onClick={() => setActiveQuiz(true)}
           >
             Iniciar Quiz

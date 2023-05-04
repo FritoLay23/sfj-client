@@ -1,10 +1,10 @@
-const GamesP = ({ Comp }) => {
+import GamesAdd from "../../components/GamesAdd.c";
+
+const GamesP = () => {
     return (
-  
-        <main>
-          <>{Comp ? <Comp /> : <h1>GamesP</h1>}</>
-        </main>
-  
+      <>
+        <GamesAdd />
+      </>
     );
   };
   export default GamesP;

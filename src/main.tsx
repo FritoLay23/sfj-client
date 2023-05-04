@@ -11,6 +11,7 @@ import "./styles/About.scss";
 import "./styles/Slider.scss";
 import "./styles/Login.scss";
 import "./styles/Inicio.scss";
+import "./styles/Branch.scss";
 //scss
 
 const Render = () => {
