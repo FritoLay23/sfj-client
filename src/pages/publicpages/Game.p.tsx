@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 
 const getGames = async (branch: any) => {
   const games = await gamesRequest();
-  const gameShuflle = await shuffleArrayG(games.data.games);
-  const gameBranch = gameShuflle
+  const gameBranch = games.data.games
     .map((game: any) => {
       if (game.branch === branch) return game;
     })
     .filter((i: any) => i !== undefined);
-  return gameBranch[0];
+  const gameShuflle = shuffleArrayG(gameBranch);
+  return gameShuflle[0];
 };
 
 const shuffleArrayG = (array: any) => {
@@ -28,20 +28,14 @@ const GameP = () => {
       const games = await getGames(branch);
       setGameBranch(games);
     };
-  
+
     fetchGames();
   }, [branch]);
 
-if(!gameBranch){
-  return <div>Loading...</div>;
-}
-  /*{gameBranch ? (
-     
-    ) : (
-     
-    )}*/
+  if (!gameBranch) {
+    return <div>Loading...</div>;
+  }
 
-    return <GameC gameBranch={gameBranch} />
+  return <GameC gameBranch={gameBranch} />;
 };
 export default GameP;
-

@@ -14,18 +14,6 @@ const [
 const BranchList = () => {
   return (
     <div className="cont_cardBranch">
-      {/* branch Link Ciencia */}
-      <BranchCardC
-        branch={branches.ciencia}
-        src={imgCiencia}
-        alt={`branch ${branches.ciencia}`}
-      />
-      {/* branch Link Deportes */}
-      <BranchCardC
-        branch={branches.deportes}
-        src={imgDeportes}
-        alt={`branch ${branches.deportes}`}
-      />
       {/* branch Link Filosofia */}
       <BranchCardC
         branch={branches.filosofia}
@@ -43,18 +31,6 @@ const BranchList = () => {
         branch={branches.historia}
         src={imgHistoria}
         alt={`branch ${branches.historia}`}
-      />
-      {/* branch Link Literatura */}
-      <BranchCardC
-        branch={branches.literatura}
-        src={imgLiteratura}
-        alt={`branch ${branches.literatura}`}
-      />
-      {/* branch Link Tecnologia */}
-      <BranchCardC
-        branch={branches.tecnologia}
-        src={imgTecnologia}
-        alt={`branch ${branches.tecnologia}`}
       />
     </div>
   );
