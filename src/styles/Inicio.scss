@@ -43,3 +43,20 @@
     .start-button:hover {
       background-color: #0056b3;
     }
+    .galeri{
+        display: flex;
+        height: 0px;
+        gap: 2rem;
+    }
+    .galeri > div{
+        flex: 10;
+        border-radius: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 50%;
+        transition: all .7s cubic-bezier(.25, .4, .35, 1.4);
+    }
+
+    .galeri > div:hover{
+        flex: 5;
+    }
