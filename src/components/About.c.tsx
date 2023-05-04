@@ -3,7 +3,86 @@ import { Link } from "react-router-dom";
 
 const Aboutc = () => {
   return (
-    <div className="we-are-block">
+<section className="about">
+      <div className="about__header">
+        <h2 className="about__title">Sobre nosotros</h2>
+      </div>
+      <div className="about__content">
+        <p className="about__description">¡Bienvenido a nuestra página de juegos! Disfruta de una amplia
+            selección de juegos gratuitos, desde clásicos hasta los más
+            recientes. Diviértete solo o en compañía de tus amigos o maestro, ¡y
+            compite por la mejor puntuación! </p>
+        <br />
+        <p className="about__description">Nuestro equipo está compuesto por profesionales altamente capacitados y apasionados por la tecnología. Trabajamos en estrecha colaboración con nuestros clientes para asegurarnos de que entregamos soluciones que satisfagan sus necesidades y superen sus expectativas.</p>
+      </div>
+      <div className="about__footer">
+        <h3 className="about__subtitle">Nuestro equipo</h3>
+        <ul className="about__team">
+          <li className="about__team-member">
+            <h4 className="about__team-name">Alex Soriano (Lider)</h4>
+            <p className="about__team-position">Desarrollador web</p>
+          </li>
+          <br />
+          <li className="about__team-member">
+            <h4 className="about__team-name">Robinson Novo</h4>
+            <p className="about__team-position">Desarrollador web</p>
+          </li>
+          <br />
+          <li className="about__team-member">
+            <h4 className="about__team-name">Gregory Cuevas</h4>
+            <p className="about__team-position">Desarrollador web</p>
+          </li>
+          <br />
+          <li className="about__team-member">
+            <h4 className="about__team-name">Jonathan Valdez</h4>
+            <p className="about__team-position">Desarrollador web</p>
+          </li>
+          <br />
+          <li className="about__team-member">
+            <h4 className="about__team-name">Jorge Suarez</h4>
+            <p className="about__team-position">Desarrollador web</p>
+          </li>
+          <br />
+          <li className="about__team-member">
+            <h4 className="about__team-name">Jean Marcos</h4>
+            <p className="about__team-position">Desarrollador web</p>
+          </li>
+          <br />
+          <li className="about__team-member">
+            <h4 className="about__team-name">Niugeny Justo</h4>
+            <p className="about__team-position">Desarrollador web</p>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {/*<div className="we-are-block">
       <div id="about-us-section">
         <div className="about-us-image">
           <img
@@ -53,8 +132,5 @@ const Aboutc = () => {
           </Link>
         </div>
       </div>
-    </div>
-  );
-};
-
+  </div>*/}
 export default Aboutc;
