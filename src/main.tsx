@@ -5,6 +5,7 @@ import App from './App';
 //scss
 import './styles/Navbar.scss';
 import './styles/Footer.scss';
+import './styles/Login.scss';
 //scss
 
 const Render = () => {
