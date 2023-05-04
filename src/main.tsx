@@ -7,7 +7,9 @@ import "./styles/Navbar.scss";
 import "./styles/Footer.scss";
 import "./styles/Index.scss";
 import "./styles/Game.scss";
-import "./styles/About.scss"
+import "./styles/About.scss";
+import "./styles/Slider.scss";
+import "./styles/Login.scss"
 //scss
 
 const Render = () => {
