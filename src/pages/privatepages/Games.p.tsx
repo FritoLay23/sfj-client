@@ -1,10 +1,10 @@
-import GamesAdd from "../../components/GamesAdd.c";
+import GamesSet from "../../components/GamesSet.c";
 
 const GamesP = () => {
-    return (
-      <>
-        <GamesAdd />
-      </>
-    );
-  };
-  export default GamesP;
+  return (
+    <>
+      <GamesSet />
+    </>
+  );
+};
+export default GamesP;

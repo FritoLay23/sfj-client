@@ -1,0 +1,136 @@
+.cont_gamesSet {
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .listGamesOptions {
+    width: 100%;
+    height: 10%;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & > li {
+      width: 10%;
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #98fb98;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgb(122, 201, 127);
+      }
+    }
+  }
+
+  .cont_postGame {
+    width: 100%;
+    height: 90%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      height: 10%;
+    }
+
+    .form_games {
+      width: 80%;
+      height: 80%;
+      border-radius: 25px;
+      background-color: #b3d1b5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1vh;
+
+      .partFormGames {
+        width: 80%;
+        display: flex;
+
+        label {
+          width: 15%;
+        }
+
+        input[type="text"],
+        textarea {
+          flex: 1;
+          padding: 0.3rem;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          outline: none;
+        }
+
+        #incorrectAnswerGames {
+          input[type="text"] {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #45a049;
+        }
+      }
+    }
+
+    .form_gamesDel {
+      width: 50%;
+      height: 50%;
+      border-radius: 25px;
+      background-color: #b3d1b5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5vh;
+
+      label {
+        width: 15%;
+      }
+
+      input {
+        flex: 1;
+        padding: 0.3rem;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+      }
+
+      button {
+        background-color: #c42f2f;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #b51616;
+        }
+      }
+    }
+  }
+}

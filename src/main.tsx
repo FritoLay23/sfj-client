@@ -12,6 +12,7 @@ import "./styles/Slider.scss";
 import "./styles/Login.scss";
 import "./styles/Inicio.scss";
 import "./styles/Branch.scss";
+import "./styles/GamesAdd.scss";
 //scss
 
 const Render = () => {
