@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import GamesPA from "./GamesPA.c";
 import GamesDel from "./GamesDel.c";
+import GamesM from "./GamesM.c";
 
 interface MostrarProps {
   mostrar: string;
@@ -19,7 +20,7 @@ interface EliminarProps {
 }
 
 const Mostrar: React.FC<MostrarProps> = ({ mostrar }) => {
-  return <div>{mostrar}</div>;
+  return <GamesM value={mostrar} />;
 };
 
 const Insertar: React.FC<InsertarProps> = ({ insertar }) => {
@@ -56,7 +57,7 @@ const GamesSet: React.FC = () => {
   return (
     <div className="cont_gamesSet">
       <ul className="listGamesOptions">
-        <li onClick={() => handleSeleccionarOpcion("get")}>Ver</li>
+        <li onClick={() => handleSeleccionarOpcion("get")}>Mostrar</li>
         <li onClick={() => handleSeleccionarOpcion("post")}>Ingresar</li>
         <li onClick={() => handleSeleccionarOpcion("put")}>Actualizar</li>
         <li onClick={() => handleSeleccionarOpcion("delete")}>Eliminar</li>
