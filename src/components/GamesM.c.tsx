@@ -1,5 +1,5 @@
 const GamesM = ({ value }: any) => {
-  return <div>Ver</div>;
+  return <div>Ver Juego</div>;
 };
 
 export default GamesM;

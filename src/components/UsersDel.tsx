@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { gamesRequestD } from "../api/api";
+import { usersRequestD } from "../api/api";
 
-const GamesDel = ({ value }: any) => {
+const UsersDel = ({ value }: any) => {
   const [id, setID] = useState("0");
 
   const handleInputChange = async (e: any) => {
@@ -15,12 +15,12 @@ const GamesDel = ({ value }: any) => {
       alert("Ingrese un ID");
       return;
     }
-    const resGamesD = await gamesRequestD(id);
+    const resUsersD = await usersRequestD(id);
   };
 
   return (
     <div className="cont_postGame">
-      <h1>{value} Juego</h1>
+      <h1>{value} Usuario</h1>
       <form action="" method="DELETE" className="form_gamesDel">
         <div className="comp_GamesDel">
           <label htmlFor="">ID:</label>
@@ -45,4 +45,4 @@ const GamesDel = ({ value }: any) => {
   );
 };
 
-export default GamesDel;
+export default UsersDel;
