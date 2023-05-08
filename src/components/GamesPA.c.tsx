@@ -135,8 +135,6 @@ const GamesPA = ({ value }: any) => {
           <label htmlFor="">Descripción:</label>
           <textarea
             name="description"
-            cols="20"
-            rows="2"
             placeholder="Descripción"
             value={games.description}
             onChange={handleInputChange}

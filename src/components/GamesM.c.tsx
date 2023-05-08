@@ -3,9 +3,6 @@ import { gamesRequest } from "../api/api";
 import { useEffect, useState } from "react";
 
 const GamesM = ({ value }: any) => {
-<<<<<<< HEAD
-  return <div>Ver Juego</div>;
-=======
   const getGames = async () => {
     const response = await gamesRequest();
     return response;
@@ -34,7 +31,6 @@ const GamesM = ({ value }: any) => {
   };
 
   return <Udatagrid data={GridProps} />;
->>>>>>> 7a6b7041fd2b2482c5c7a8756381657c08cc3996
 };
 
 export default GamesM;

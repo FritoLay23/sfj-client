@@ -10,6 +10,7 @@ export const profileRequest = async () => {
   return await axios.get("/auth");
 };
 
+//  GAMES REQUESTS
 export const gamesRequest = async () => {
   return await axios.get("/games");
 };
@@ -29,6 +30,11 @@ export const gamesRequestPO = async (games: any) => {
 export const gamesRequestD = async (id: any) => {
   console.log(id);
   return await axios.delete(`/games/${id}`);
+};
+
+//  USERS REQUESTS
+export const usersRequest = async () => {
+  return await axios.get("/users");
 };
 
 export const usersRequestP = async (users: any) => {

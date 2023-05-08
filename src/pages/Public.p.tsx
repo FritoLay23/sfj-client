@@ -1,7 +1,7 @@
-import Navbar from '../components/Navbar.c';
-import Footer from '../components/Footer.c';
+import Navbar from "../components/Navbar.c";
+import Footer from "../components/Footer.c";
 
-const Public = ({ Comp }) => {
+const Public = ({ Comp }: any) => {
   return (
     <>
       <Navbar />

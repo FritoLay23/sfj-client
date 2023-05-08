@@ -15,11 +15,11 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <ul className="list-navbar">
-          <li>
+          {/*           <li>
             <Link to="/about" className="link-nav">
               Acerca de
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/games" className="link-nav">
               Games
@@ -30,11 +30,11 @@ const Navbar: React.FC = () => {
               Users
             </Link>
           </li>
-          <li>
+          {/*           <li>
             <Link to="/scores" className="link-nav">
               Scores
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/branch" className="link-nav">
               Clasificaciones

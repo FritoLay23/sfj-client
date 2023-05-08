@@ -1,13 +1,10 @@
-import { useAuthStore } from "../../store/auth.store";
 import UsersSet from "../../components/UsersSet.c";
 
-const UsersP = ({ Comp }) => {
-  const profile = useAuthStore((state) => state.profile);
-
+const UsersP = () => {
   return (
-    <main>
-      <>{Comp ? <Comp /> : <UsersSet />}</>
-    </main>
+    <>
+      <UsersSet />
+    </>
   );
 };
 export default UsersP;

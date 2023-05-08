@@ -1,7 +1,7 @@
-import Navbar from '../components/Navbar.c';
-import Footer from '../components/Footer.c';
+import Navbar from "../components/Navbar.c";
+import Footer from "../components/Footer.c";
 
-const Private = ({ Comp }) => {
+const Private = ({ Comp }: any) => {
   return (
     <>
       <Navbar />
