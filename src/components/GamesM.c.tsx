@@ -1,4 +1,6 @@
 import Udatagrid from "./Udatagrid.c";
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { authApi } from '../libs/axios'
 
 
 const GamesM = ({ value }: any) => {
