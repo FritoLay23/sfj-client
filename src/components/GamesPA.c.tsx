@@ -97,25 +97,25 @@ const GamesPA = ({ value }: any) => {
     <div className="cont_postGame">
       <h1>{value} Juego</h1>
       <form action="" method="POST" className="form_games">
-        <Input
+        {/*         <Input
           type="file"
           name="image"
           value={games.image}
           onChange={handleInputChange}
           bsSize="sm"
-        />
+        /> */}
 
         {value === "Actualizar" ? (
           <div className="partFormGames">
             <FormGroup floating>
-            <Input
-              type="text"
-              name="id"
-              placeholder="ID"
-              value={games.id}
-              onChange={handleInputChange}
-            />
-            <Label htmlFor="">ID: </Label>
+              <Input
+                type="text"
+                name="id"
+                placeholder="ID"
+                value={games.id}
+                onChange={handleInputChange}
+              />
+              <Label htmlFor="">ID: </Label>
             </FormGroup>
           </div>
         ) : (
@@ -209,25 +209,25 @@ const GamesPA = ({ value }: any) => {
                   </FormGroup>
                   <Col sm="4" xs="6" />
                   <FormGroup floating>
-                  <Input
-                    type="text"
-                    name="incorrect2"
-                    placeholder="Incorrecta 2"
-                    value={games.incorrect2}
-                    onChange={handleInputQuestion}
-                  />
-                  <Label htmlFor="">Incorrecta 2</Label>
+                    <Input
+                      type="text"
+                      name="incorrect2"
+                      placeholder="Incorrecta 2"
+                      value={games.incorrect2}
+                      onChange={handleInputQuestion}
+                    />
+                    <Label htmlFor="">Incorrecta 2</Label>
                   </FormGroup>
                   <Col sm="4" />
                   <FormGroup floating>
-                  <Input
-                    type="text"
-                    name="incorrect3"
-                    placeholder="Incorrecta 3"
-                    value={games.incorrect3}
-                    onChange={handleInputQuestion}
-                  />
-                  <Label htmlFor="">Incorrecta 3</Label>
+                    <Input
+                      type="text"
+                      name="incorrect3"
+                      placeholder="Incorrecta 3"
+                      value={games.incorrect3}
+                      onChange={handleInputQuestion}
+                    />
+                    <Label htmlFor="">Incorrecta 3</Label>
                   </FormGroup>
                 </Row>
               </Form>
@@ -262,7 +262,7 @@ const GamesPA = ({ value }: any) => {
 
         {/*-------------------------------PREGUNTAS--------------------------------------------*/}
 
-        <div className="partFormGames">
+        {/* <div className="partFormGames">
           <FormGroup floating>
             <Input
               type="number"
@@ -285,7 +285,7 @@ const GamesPA = ({ value }: any) => {
             />
             <Label htmlFor="">Actualizado en:</Label>
           </FormGroup>
-        </div>
+        </div> */}
         <Button
           color="success"
           block
