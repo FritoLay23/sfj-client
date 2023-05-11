@@ -2,6 +2,9 @@ import React from "react";
 import { loginRequest, profileRequest } from "../api/api";
 import { useAuthStore } from "../store/auth.store";
 import { useNavigate } from "react-router-dom";
+import { Input, FormGroup, Label, Button} from "reactstrap";
+import { FiUser } from "react-icons/fi";
+
 
 const Login = () => {
   const setToken = useAuthStore((state) => state.setToken);
@@ -33,17 +36,19 @@ const Login = () => {
         <img src="mapa.png" alt="" />
       </div>
       <div className="title">SFJ</div>
-
       <div className="fields">
         <div className="username">
-<i className="fa fa-user"></i>
-          <input type="username" className="user-input" placeholder="👤 username" /></div>
-        <div className="password"><i className="fa fa-lock"></i> <input type="password" className="pass-input" placeholder="🔑 password" /></div>
+        <FormGroup floating>
+          <Input className="login-input"/>
+          <Label>Usuario</Label>
+        </FormGroup>
+        </div>
+        <FormGroup floating>
+        <Input type="password" className="login-input"/>
+        <Label>Contraseña</Label>
+        </FormGroup>
       </div>
-      <button className="signin-button">Login</button>
-      <div className="link">
-        <a href="#">Forgot password?</a> or <a href="#">Sign up</a>
-      </div>
+      <Button className="signin-button">Login</Button>
     </div>
     </form>
   );

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { RequireAuth } from "./components/RequireAuth.c";
 import { useAuthStore } from "./store/auth.store";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Pages - Father
 import Public from "./pages/Public.p";
