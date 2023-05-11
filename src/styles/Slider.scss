@@ -1,37 +1,133 @@
-.slick-dots {
-    bottom: 20px;
+.container_slider {
+  width: 100vw;
+  height: 90vh;
+}
+.slider {
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+}
+.slide_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s ease;
+}
+
+.pagination {
+  position: relative;
+  top: -9vh;
+  gap: 1.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-pagination {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 25%;
+  border: 2px solid #fff;
+  background: #ffffff80;
+  transition: all 300ms;
+  cursor: pointer;
+  user-select: none;
+}
+
+.item-pagination:hover {
+  transform: scale(2);
+}
+
+.item-pagination img {
+  display: inline-block;
+  max-width: none;
+  height: 100%;
+  transform: scale(1);
+  opacity: 0.5;
+  transition: all 300ms;
+}
+
+.item-pagination:hover img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes autoplay {
+  33.3% {
+    transform: translate3d(calc(-100% * 0), 0, 0);
   }
-  
-  .slick-dots li button:before {
-    font-size: 10px;
-    color: #fff;
-    opacity: 0.5;
+
+  66.6% {
+    transform: translate3d(calc(-100% * 1), 0, 0);
   }
-  
-  .slick-dots li.slick-active button:before {
-    opacity: 1;
+
+  100% {
+    transform: translate3d(calc(-100% * 2), 0, 0);
   }
-  
-  .slick-prev,
-  .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
+}
+
+.squares {
+  width: 50%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: ease 0.3s;
+    background-image: none !important;
+    background-color: #000;
+
+    p {
+      display: block;
+      position: absolute;
+    }
   }
-  
-  .slick-prev {
-    left: 20px;
+}
+
+.squares > p {
+  color: #000;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bolder;
+  transition: ease 0.1s;
+  display: none;
+}
+
+.squares:hover > p {
+  color: #fff;
+  transition: ease 0.1s;
+}
+
+@media screen and (max-width: 720px) {
+  .container_Squares {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    .squares {
+      width: 90%;
+      height: 70%;
+    }
   }
-  
-  .slick-next {
-    right: 20px;
+
+  .squares > p {
+    font-size: 1.5rem;
   }
-  
-  img {
-    width: 100%;
-    height: auto;
-  }
+}

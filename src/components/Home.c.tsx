@@ -1,8 +1,12 @@
-
+import  Slider  from './Slider.c';
+import Squares from './Squares.c';
 
 const Home = () => {
   return (
-    <div>hola</div>
+    <>
+      <Slider />
+      <Squares />
+    </>
   );
 };
 export default Home;
