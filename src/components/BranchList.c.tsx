@@ -11,6 +11,7 @@ const [
   imgHistoria,
   imgLiteratura,
   imgTecnologia,
+  imgQuizz,
 ] = imgs;
 
 const BranchList = () => {
@@ -37,7 +38,7 @@ const BranchList = () => {
           return (
             <BranchCardC
               branch={game.branch}
-              src={imgGeografia}
+              src={imgQuizz}
               alt={`branch ${game.branch}`}
             />
           );

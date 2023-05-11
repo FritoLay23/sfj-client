@@ -33,6 +33,22 @@ const GamesPA = ({ value }: any) => {
   const handleQuestion = async (e: any) => {
     e.preventDefault();
 
+    const questionEmpty = {
+      id: games.id,
+      type: games.type,
+      branch: games.branch,
+      title: games.title,
+      description: games.description,
+      question: "",
+      image: "",
+      answer: "",
+      incorrect1: "",
+      incorrect2: "",
+      incorrect3: "",
+      value: games.value,
+      updated: games.updated,
+    };
+
     const newQuestion = {
       question: games.question,
       image: games.image,
@@ -42,6 +58,7 @@ const GamesPA = ({ value }: any) => {
     };
 
     setArrayQuestions((prevState) => [...prevState, newQuestion]);
+    setGames(questionEmpty);
   };
 
   const handleInputChange = async (e: any) => {

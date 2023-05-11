@@ -3,7 +3,7 @@ import { gamesRequestD } from "../api/api";
 import { Input, Form, FormGroup, Label, Button, Col, Row } from "reactstrap";
 
 const GamesDel = ({ value }: any) => {
-  const [id, setID] = useState("0");
+  const [id, setID] = useState("");
 
   const handleInputChange = async (e: any) => {
     const { value } = e.target;
@@ -17,6 +17,7 @@ const GamesDel = ({ value }: any) => {
       return;
     }
     const resGamesD = await gamesRequestD(id);
+    setID("");
   };
 
   return (

@@ -5,6 +5,7 @@ import Geografia from "./assets/geografía.png";
 import Historia from "./assets/historia.png";
 import Literatura from "./assets/literatura.png";
 import Tecnologia from "./assets/tecnología.png";
+import Quizz from "./assets/descarga.png";
 
 export const imgs = [
   Ciencia,
@@ -14,6 +15,7 @@ export const imgs = [
   Historia,
   Literatura,
   Tecnologia,
+  Quizz,
 ];
 
 export const branches = {
@@ -24,6 +26,7 @@ export const branches = {
   filosofia: "Filosofía",
   tecnologia: "Tecnología",
   geografia: "Geografía",
+  quizz: "Quizz",
 };
 
 const {
@@ -34,6 +37,7 @@ const {
   ciencia,
   filosofia,
   geografia,
+  quizz,
 } = branches;
 
 export const questions = [

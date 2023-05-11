@@ -5,6 +5,9 @@ import { useAuthStore } from "../store/auth.store";
 const Navbar: React.FC = () => {
   const isAuth = useAuthStore((state) => state.isAuth);
   const logout = useAuthStore((state) => state.logout);
+  const type = useAuthStore((state) => state.profile);
+
+  console.log(type);
 
   return (
     <nav>

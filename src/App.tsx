@@ -18,6 +18,7 @@ import QuestionsP from "./pages/privatepages/Questions.p";
 import GamesP from "./pages/privatepages/Games.p";
 import ScoresP from "./pages/privatepages/Scores.p";
 import GameP from "./pages/publicpages/Game.p";
+import Register from "./components/Register.c";
 
 const App = () => {
   const isAuth = useAuthStore((state) => state.isAuth);
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/" element={<Public Comp={Home} />} />
         <Route path="/about" element={<Public Comp={About} />} />
         <Route path="/login" element={<Public Comp={Login} />} />
+        <Route path="/register" element={<Public Comp={Register} />} />
         <Route path="*" element={<Public Comp={NoPageP} />} />
 
         {/* Private Pages */}

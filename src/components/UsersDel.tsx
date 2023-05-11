@@ -4,7 +4,7 @@ import { Input, Form, FormGroup, Label, Button, Col, Row } from "reactstrap";
 
 
 const UsersDel = ({ value }: any) => {
-  const [id, setID] = useState("0");
+  const [id, setID] = useState("");
 
   const handleInputChange = async (e: any) => {
     const { value } = e.target;
@@ -18,6 +18,7 @@ const UsersDel = ({ value }: any) => {
       return;
     }
     const resUsersD = await usersRequestD(id);
+    setID("");
   };
 
   return (

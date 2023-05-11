@@ -4,6 +4,8 @@ import { useAuthStore } from "../store/auth.store";
 import { useNavigate } from "react-router-dom";
 import { Input, FormGroup, Label, Button} from "reactstrap";
 import { FiUser } from "react-icons/fi";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
@@ -50,27 +52,12 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-          <div className="login-div">
+    <div className="login-div">
       <div className="logo">
         <img src="mapa.png" alt="" />
       </div>
-<<<<<<< HEAD
-      <div className="title">
-        <h2>SFJ</h2>
-        <p>{errol}</p>
-      </div>
-
-      <div className="fields">
-        <div className="username">
-          <i className="fa fa-user"></i>
-          <input type="username" className="user-input" placeholder="👤 username" /></div>
-        <div className="password"><i className="fa fa-lock"></i> <input type="password" className="pass-input" placeholder="🔑 password" /></div>
-      </div>
-      <button className="signin-button">Login</button>
-      <div className="link">
-        <a href="#">Forgot password?</a> or <a href="#">Sign up</a>
-=======
       <div className="title">SFJ</div>
+      <p className="title-dina">{errol}</p>
       <div className="fields">
         <div className="username">
         <FormGroup floating>
@@ -82,9 +69,12 @@ const Login = () => {
         <Input type="password" className="login-input"/>
         <Label>Contraseña</Label>
         </FormGroup>
->>>>>>> 4eaa86a4b4f749351b86ba264dc1baf08268fb2b
       </div>
       <Button className="signin-button">Login</Button>
+      <div className="register">
+        <p>¿No tienes una cuenta?</p>
+        <Link to='/register' className="registerP">Haz clic aqui</Link>
+      </div>
     </div>
     </form>
   );
