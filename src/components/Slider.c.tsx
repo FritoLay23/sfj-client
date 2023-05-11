@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import Pagination from './Pagination.c';
 const SliderData = [
-  'about-1.jpg',
-  'about-2.jpg',
-  'about-3.jpg',
-  'artesano.png',
-  'alex.JPG'
+  'slide1.jfif',
+  'slide2.jfif',
+  'slide3.jfif',
+  'slide4.jfif',
+  'slide5.jfif',
+  'slide6.jfif',
+  'slide7.jfif',
 ];
 // Path to images
 

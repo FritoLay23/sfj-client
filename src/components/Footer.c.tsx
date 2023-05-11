@@ -5,16 +5,14 @@ return (
       <div className="contenedor_footer">
         <h3 className="footer_h3">SFJ</h3>
         <p className="footer_descripcion">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          a optio voluptatibus aut. Saepe, nostrum inventore! Suscipit dolorem
-          numquam obcaecati, beatae quam aut ullam deleniti laudantium ratione
-          est? Ab, beatae!
+          
+SFJ es una plataforma diseñada para evaluar y medir el conocimiento en el campo de las ciencias sociales a través de preguntas de selección múltiple. El sistema SFJ combina una interfaz intuitiva con una base de datos exhaustiva de preguntas relacionadas con temas como historia, geografía, economía, política y sociología.  
         </p>
       </div>
       <div className="footer_bajo">
         <p>
-          copyrigth &copy; 2023 SFJ. designed by{" Beiguete "}
-          <span>Team</span>
+         Designed by{" "}
+          <span>AJ</span>
         </p>
       </div>
     </footer>

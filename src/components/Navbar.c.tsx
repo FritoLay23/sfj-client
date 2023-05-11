@@ -5,9 +5,7 @@ import { useAuthStore } from "../store/auth.store";
 const Navbar: React.FC = () => {
   const isAuth = useAuthStore((state) => state.isAuth);
   const logout = useAuthStore((state) => state.logout);
-  const type = useAuthStore((state) => state.profile);
-
-  console.log(type);
+  const profile = useAuthStore((state) => state.profile);
 
   return (
     <nav>
@@ -23,16 +21,22 @@ const Navbar: React.FC = () => {
               Acerca de
             </Link>
           </li> */}
-          <li>
-            <Link to="/games" className="link-nav">
-              Games
-            </Link>
-          </li>
-          <li>
-            <Link to="/users" className="link-nav">
-              Users
-            </Link>
-          </li>
+          {
+            profile?.type === "admin"? (
+              <>
+              <li>
+              <Link to="/games" className="link-nav">
+                Games
+              </Link>
+            </li>
+            <li>
+              <Link to="/users" className="link-nav">
+                Users
+              </Link>
+            </li>
+            </>
+            ) : <></>
+          }
           {/*           <li>
             <Link to="/scores" className="link-nav">
               Scores
