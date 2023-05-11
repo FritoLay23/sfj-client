@@ -1,5 +1,7 @@
 import { usersRequestP, usersRequestPO } from "../api/api";
 import { useState } from "react";
+import { Input, Form, FormGroup, Label, Button, Col, Row } from "reactstrap";
+
 
 const UsersPA = ({ value }: any) => {
   const dataUsers = {
@@ -47,76 +49,95 @@ const UsersPA = ({ value }: any) => {
       <form action="" method="POST" className="form_games">
         {value === "Actualizar" ? (
           <div className="partFormGames">
-            <label htmlFor="">ID: </label>
-            <input
+            <FormGroup floating>
+            <Input
               type="text"
               name="id"
               placeholder="ID"
               value={users.id}
               onChange={handleInputChange}
             />
+            <Label htmlFor="">ID: </Label>
+            </FormGroup>
           </div>
         ) : (
           <></>
         )}
 
         <div className="partFormGames">
-          <label htmlFor="">Type: </label>
-          <input
+          <FormGroup floating>
+         
+          <Input
             type="text"
             name="type"
             placeholder="Tipo de juego"
             value={users.type}
             onChange={handleInputChange}
           />
+           <Label htmlFor="">Type: </Label>
+          </FormGroup>
         </div>
         <div className="partFormGames">
-          <label htmlFor="">Nombres: </label>
-          <input
+          <FormGroup floating>
+          
+          <Input
             type="text"
             name="name"
             placeholder="Nombres"
             value={users.name}
             onChange={handleInputChange}
           />
+          <Label htmlFor="">Nombres: </Label>
+          </FormGroup>
         </div>
         <div className="partFormGames">
-          <label htmlFor="">Apellidos: </label>
-          <input
+          <FormGroup floating>
+          
+          <Input
             type="text"
             name="lastname"
             placeholder="Apellidos"
             value={users.lastname}
             onChange={handleInputChange}
           />
+          <Label htmlFor="">Apellidos: </Label>
+          </FormGroup>
         </div>
         <div className="partFormGames">
-          <label htmlFor="">Usuario: </label>
-          <input
+          <FormGroup floating>
+          
+          <Input
             type="text"
             name="user"
             placeholder="Usuarios"
             value={users.user}
             onChange={handleInputChange}
           />
+          <Label htmlFor="">Usuario: </Label>
+          </FormGroup>
         </div>
         <div className="partFormGames">
-          <label htmlFor="">Contraseña: </label>
-          <input
+          <FormGroup floating>
+          
+          <Input
             type="text"
             name="password"
             placeholder="Contraseña"
             value={users.password}
             onChange={handleInputChange}
           />
+          <Label htmlFor="">Contraseña: </Label>
+          </FormGroup>
         </div>
-        <button
+        <Button
+        block
+        color="success"
           type="submit"
           className="button_formGames"
           onClick={handleSubmit}
         >
           {value}
-        </button>
+        </Button>
       </form>
     </div>
   );

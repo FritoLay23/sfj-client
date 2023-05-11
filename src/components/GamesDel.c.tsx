@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { gamesRequestD } from "../api/api";
+import { Input, Form, FormGroup, Label, Button, Col, Row } from "reactstrap";
 
 const GamesDel = ({ value }: any) => {
   const [id, setID] = useState("0");
@@ -23,23 +24,27 @@ const GamesDel = ({ value }: any) => {
       <h1>{value} Juego</h1>
       <form action="" method="DELETE" className="form_gamesDel">
         <div className="comp_GamesDel">
-          <label htmlFor="">ID:</label>
-          <input
+        <FormGroup floating>
+          
+          <Input
             type="text"
             name="id"
             placeholder="ID"
             value={id}
             onChange={handleInputChange}
           />
+          <Label htmlFor="">ID:</Label>
+          </FormGroup>
         </div>
 
-        <button
+        <Button
+        color="danger"
           type="submit"
           className="button_formGamesDel"
           onClick={handleSubmit}
         >
           {value}
-        </button>
+        </Button>
       </form>
     </div>
   );

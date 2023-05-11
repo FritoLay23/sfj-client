@@ -2,7 +2,6 @@ import React from "react";
 import { loginRequest, profileRequest } from "../api/api";
 import { useAuthStore } from "../store/auth.store";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const Login = () => {
   const setToken = useAuthStore((state) => state.setToken);
@@ -52,14 +51,11 @@ const Login = () => {
       <div className="logo">
         <img src="mapa.png" alt="" />
       </div>
-      <div className="title">
-        <h2>SFJ</h2>
-        <p>{errol}</p>
-      </div>
+      <div className="title">SFJ</div>
 
       <div className="fields">
         <div className="username">
-          <i className="fa fa-user"></i>
+<i className="fa fa-user"></i>
           <input type="username" className="user-input" placeholder="👤 username" /></div>
         <div className="password"><i className="fa fa-lock"></i> <input type="password" className="pass-input" placeholder="🔑 password" /></div>
       </div>
@@ -67,6 +63,7 @@ const Login = () => {
       <div className="link">
         <a href="#">Forgot password?</a> or <a href="#">Sign up</a>
       </div>
+      <Button className="signin-button">Login</Button>
     </div>
     </form>
   );

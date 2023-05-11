@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { usersRequestD } from "../api/api";
+import { Input, Form, FormGroup, Label, Button, Col, Row } from "reactstrap";
+
 
 const UsersDel = ({ value }: any) => {
   const [id, setID] = useState("0");
@@ -23,23 +25,28 @@ const UsersDel = ({ value }: any) => {
       <h1>{value} Usuario</h1>
       <form action="" method="DELETE" className="form_gamesDel">
         <div className="comp_GamesDel">
-          <label htmlFor="">ID:</label>
-          <input
+          <FormGroup floating>
+          
+          <Input
             type="text"
             name="id"
             placeholder="ID"
             value={id}
             onChange={handleInputChange}
           />
+          <Label htmlFor="">ID:</Label>
+          </FormGroup>
         </div>
 
-        <button
+        <Button
+        block
+        color="danger"
           type="submit"
           className="button_formGamesDel"
           onClick={handleSubmit}
         >
           {value}
-        </button>
+        </Button>
       </form>
     </div>
   );

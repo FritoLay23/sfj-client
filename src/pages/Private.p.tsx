@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar.c";
-import Footer from "../components/Footer.c";
+/*import Footer from "../components/Footer.c";*/
 
 const Private = ({ Comp }: any) => {
   return (
@@ -8,7 +8,7 @@ const Private = ({ Comp }: any) => {
       <main>
         <>{Comp ? <Comp /> : <h1>Private</h1>}</>
       </main>
-      <Footer />
+      {/*<Footer />*/}
     </>
   );
 };
